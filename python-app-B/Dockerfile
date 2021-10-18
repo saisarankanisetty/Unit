@@ -7,8 +7,7 @@ COPY . /app
 WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install --editable .
-
-RUN flask run 
+ 
 RUN flask initdb
 
 # Unit tests

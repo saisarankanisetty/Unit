@@ -11,7 +11,7 @@ RUN pip install --editable .
 RUN export FLASK_APP="flaskr"
 RUN export FLASK_ENV=development
 
-RUN flask init_db
+RUN flask initdb
 
 # Unit tests
 # python setup.py test

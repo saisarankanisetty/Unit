@@ -8,10 +8,10 @@ WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install --editable .
 
-RUN pip install flask-migrate
+
 RUN export FLASK_APP="flaskr"
 RUN export FLASK_ENV=development
-
+RUN flask run
 RUN flask init-db
 
 # Unit tests

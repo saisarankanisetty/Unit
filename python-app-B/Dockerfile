@@ -8,10 +8,8 @@ WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install --editable .
 
-
-RUN export FLASK_APP="flaskr"
 RUN flask run 
-RUN flask init-db
+RUN flask initdb
 
 # Unit tests
 # python setup.py test

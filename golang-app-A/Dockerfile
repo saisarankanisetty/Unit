@@ -34,5 +34,5 @@ CMD ["/app/go-sample-app"]
 
 FROM node:10.18.0
 
-FROM npm install -g newman
+RUN npm install -g newman
 RUN npm install -g newman-reporter-allure

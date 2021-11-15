@@ -36,6 +36,4 @@ FROM node:10.18.0
 
 RUN npm install -g newman
 RUN npm install -g newman-reporter-allure
-
-FROM anapsix/alpine-java
-RUN allure
+RUN npm install allure

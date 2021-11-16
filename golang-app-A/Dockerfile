@@ -37,3 +37,6 @@ FROM node:10.18.0
 RUN npm install -g newman
 RUN npm install -g newman-reporter-allure
 RUN npm i newman-reporter-allure
+
+FROM qameta/allure
+RUN apt-get install allure
